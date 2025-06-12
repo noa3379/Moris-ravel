@@ -1,0 +1,206 @@
+/*기본 스타일*/
+body {
+    margin: 0;
+    font-family: Instrument Serif;
+    background-color: #fdfdfd;
+    position: absolute;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.home{
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 42px;
+    margin-left: 67px; 
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 42px;
+    margin-bottom: 10px;
+    margin-left: 200px; 
+    font-size: 30px;
+}
+
+.top-nav{
+    position: sticky;
+    top: 0; /* 화면 상단에서 고정 */
+    z-index: 10; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+.main-line {
+    width: 1550px; /* 화면 너비의 80% */
+    border: 0; /* 기본 테두리 제거 */
+    height: 2px;
+    background-color: black;
+    margin: 20px 60px; /* 위아래 여백 , 가운데 정렬 */
+}
+
+/* 네비게이션 제목 아래 라인 */
+.sec-line {
+    width: 263px; /* 명시적 너비 */
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 0px 20px 10px 60px; /* 위아래 여백 , 가운데 정렬 */
+}
+
+.contents {
+    margin-left: 60px;
+    flex-direction: column;
+    position: fixed;
+
+}
+
+.contents ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 30px;
+}
+
+/* 하위 목록 숨기기 */
+.contents ul ul {
+    display: none;
+    margin-left: 20px; /* 들여쓰기 */
+}
+
+/* 상위 항목에 마우스 오버 시 하위 목록 표시 */
+.contents li:hover > ul {
+    display: block;
+}
+
+/* 모든 링크 스타일 제거 */
+.contents a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상을 상속받음 */
+    font-family: 'Instrument Serif', serif; /* 원하는 폰트 적용 */
+}
+
+/* 링크에 커서 올릴 때 효과 추가 (선택 사항) */
+.contents a:hover {
+    color: #a0a0a0; /* 마우스 오버 시 색상 변경 */
+    text-decoration: underline; /* 선택적으로 밑줄 추가 가능 */
+}
+
+
+
+
+.sub-title {
+    font-size: 30px;
+}
+
+.none-title{
+    font-size: 30px;
+}
+
+
+
+
+
+.sub-nav{
+    font-size: 30px;
+}
+
+/* Wrapper for Navigation and Title */
+.content-wrapper {
+    display: flex; /* 네비게이션과 타이틀을 수평으로 배치 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 269px; /* 두 요소 간 간격 */
+    margin-left: 60px; /* 전체 왼쪽 마진 */
+    margin-top: 40px;
+    position: sticky;
+    top: 100px; /* 화면 상단에서 고정 */
+    z-index: 10; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+.line-wrapper {
+    display: flex; /* 네비게이션과 타이틀을 수평으로 배치 */
+    gap: 120px; /* 두 요소 간 간격 */
+    margin:10px 55px; padding: 0;
+    align-items: center; /* 요소 수평 중심 정렬 */
+    position: sticky;
+    top: 140px; /* 화면 상단에서 고정 */
+    z-index: 10; /* 다른 요소 위에 표시되도록 설정 */
+}
+
+.sub-line{
+    width: 263px; /* 명시적 너비 */
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 0px;
+}
+
+.sub-line02{
+    width: 400px; /* 명시적 너비 */
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 0px;
+}
+
+.sub-line03{
+    width: 650px; /* 명시적 너비 */
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 0px;
+}
+
+.none-title{
+    width: 600px;
+}
+
+.bottom-wrapper{
+    display: flex; /* 수평 배치 */
+    justify-content: space-between; /* 내부 요소 간 간격 균등 배분 */
+    align-items: flex-start; /* 세로 방향 상단 정렬 */
+    margin: 20px; /* 바깥 여백 */
+    gap: 20px; /* 각 요소 간 간격 */
+    position: relative;
+    height: 675px;
+}
+
+/* 각 요소 크기 조정 */
+.contents {
+    width: 20%; /* 네비게이션 영역 */
+}
+
+.text {
+    position: fixed;
+    top: 215px; /* 위쪽에서 50px */
+    left: 440px; /* 왼쪽에서 200px */
+    width: 400px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.all-table {
+    position: absolute;
+    top: 0px;
+    left: 945px; /* 왼쪽에서 200px */
+    width: 650px;
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none;
+    padding: 3px;
+    text-align: left;
+}
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE BELVEDERE</title>
+    <link rel="stylesheet" href="./new.css">
+    <link rel="stylesheet" href="./newsletter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--home-->
+    <main class="home">
+        <div class="top-nav">
+        <h1><a href=main.html>LE BELVEDERE / MAIN </a>/ NEWS LETTER</h1>
+        <hr class="main-line">
+        </div>
+        <!-- Sidebar Navigation -->
+        <div class="content-wrapper">
+            <div class="sub-nav">CONTENTS</div>
+            <div class="sub-title">NEWS LETTER</div>
+            <div class="none-title"></div>
+        </div>
+        <div class="line-wrapper">
+            <hr class="sub-line">
+            <hr class="sub-line02">
+            <hr class="sub-line04">
+        </div>
+        <div class="bottom-wrapper">
+            <nav class="contents">
+                <ul>
+                    <!-- WORKS -->
+                    <li>
+                        <a href="works.html">WORKS</a>
+                        <!-- 하위 페이지 목록 -->
+                        <ul>
+                            <li><a href="pavane.html">Pavane pour une Infante défunte</a></li>
+                            <li><a href="vocalise.html">Vocalise-Etude en forme de Habanera</a></li>
+                            <li><a href="lavalse.html">La Valse</a></li>
+                            <li><a href="bolero.html">Boléro</a></li>
+                            <li><a href="allworks.html">All works</a></li>
+                        </ul>
+                    </li>
+                    <!-- 기타 항목 -->
+                    <li><a href="wallpaper.html">WALLPAPER</a></li>
+                    <li><a href="play-ravel.html">PLAY RAVEL</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="newsletter.html">NEWS LETTER</a></li>
+                </ul>
+            </nav>
+            <div class="text">
+                We constantly track and publish newsletters 
+                about Maurice Ravel once a month. We also hold 
+                a full label recital annually on 
+            <a href="https://calendar.google.com/calendar/embed?src=3038e9aded4b927fcc3596a1edd644d400aa08059834af6851e0806ff66f295c%40group.calendar.google.com&ctz=Asia%2FSeoul"
+                target="_blank"><u>May 7</u></a> (his birthday) 
+                for recipients of newsletters only. If you would like 
+                to receive it, simply enter your email here and submit it.
+            </div>
+            <div class="all-table">
+
+            </div>
+
+        <div class="form-wrapper">
+            <form id="emailForm">
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">EMAIL</label>
+                  </div>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p id="responseMessage" style="color: green; display: none;">SUCCESS</p>
+        </div>
+
+<script>
+const form = document.getElementById("emailForm");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+
+  const email = document.getElementById("email").value;
+  const responseMessage = document.getElementById("responseMessage");
+
+  if (email) {
+    // 저장 메시지 표시
+    responseMessage.style.display = "block";
+    form.reset(); // 폼 초기화
+  } else {
+    alert("Please enter a valid email.");
+  }
+});
+
+</script>
+</body>
+</html>

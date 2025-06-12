@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(119, 44, 44);
+    border-radius: 100px;
+    text-align: center;
+  }
+  
+  .red {
+    background-color: #ff6f61;
+    cursor: grab;
+  }
+  
+  .blue {
+    background-color: #6fa3ff;
+    border: 2px dashed white;
+  }
+  

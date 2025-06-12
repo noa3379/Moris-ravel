@@ -1,0 +1,94 @@
+.sub-line04{
+    width: 650px; /* 명시적 너비 */
+    border: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+form{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    top:500px;right: 50px;
+}
+
+input[type="email"] {
+    flex: 1;
+    width: 730px; height: 54px;
+    padding: 12px;
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus {
+    box-shadow: 0 0 8px rgba(184, 218, 255, 0.3);
+    outline: none;
+  }
+
+  input[type="email"]:focus + label,
+  input[type="email"]:not(:placeholder-shown) + label {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+
+   /* 라벨 스타일 */
+   .input-container label {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    font-size: 16px;
+    color: #888;
+    pointer-events: none; /* 클릭 불가 */
+    opacity: 0.5; /* 투명도 50% */
+    transition: all 0.3s ease;
+  }
+
+
+    /* 버튼 스타일 */
+button {
+        padding: 12px 20px;
+        background-color: #A0ACB0;
+        width: 258px; height: 54px;
+        color: black;
+        border: none;
+        font-family: Instrument Serif;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+  
+button:hover {
+background-color: #000000;
+color: #d9d9d9;
+}
+  
+button:active {
+        transform: scale(0.98);
+      }
+
+/* 응답 메시지 스타일 */
+#responseMessage {
+    position: absolute;
+    top:550px; right: 150px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    display: none; /* 초기에는 숨김 */
+    color: #000000;
+    }
+
+    /* 성공 메시지 */
+    #responseMessage.success {
+    color: #000000;
+    }
+  

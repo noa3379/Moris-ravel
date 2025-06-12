@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE BELVEDERE</title>
+    <link rel="stylesheet" href="./new.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--home-->
+    <main class="home">
+        <div class="top-nav">
+        <h1><a href=main.html>LE BELVEDERE / MAIN </a>/ PLAY RAVEL </h1>
+        <hr class="main-line">
+        </div>
+        <!-- Sidebar Navigation -->
+        <div class="content-wrapper">
+            <div class="sub-nav">CONTENTS</div>
+            <div class="sub-title" style="font-size: 27PX;">LET'S PLAY <U>BOLERO!</U></div>
+            <div class="none-title"></div>
+        </div>
+        <div class="line-wrapper">
+            <hr class="sub-line">
+            <hr class="sub-line02">
+            <hr class="sub-line03">
+        </div>
+
+        <div class="bottom-wrapper">
+            <nav class="contents">
+                <ul>
+                    <!-- WORKS -->
+                    <li>
+                        <a href="works.html">WORKS</a>
+                        <!-- 하위 페이지 목록 -->
+                        <ul>
+                            <li><a href="pavane.html">Pavane pour une Infante défunte</a></li>
+                            <li><a href="vocalise.html">Vocalise-Etude en forme de Habanera</a></li>
+                            <li><a href="lavalse.html">La Valse</a></li>
+                            <li><a href="bolero.html">Boléro</a></li>
+                            <li><a href="allworks.html">All works</a></li>
+                        </ul>
+                    </li>
+                    <!-- 기타 항목 -->
+                    <li><a href="wallpaper.html">WALLPAPER</a></li>
+                    <li><a href="play-ravel.html">PLAY RAVEL</a></li>
+                    <li><a href="concerts.html">CONCERTS</a></li>
+                    <li><a href="newsletter.html">NEWS LETTER</a></li>
+                </ul>
+            </nav>
+
+            <div class="game-guide" style="
+                font-size: 30px;
+                position: fixed;
+    top: 215px; /* 위쪽에서 50px */
+    left: 440px; /* 왼쪽에서 200px */
+    width: 400px;
+    line-height: 45px;
+    letter-spacing: 2px;">
+                Play using the keys
+                <br><div style="color: rgb(58, 123, 158);font-style: italic;"> S, D, and A </div><br>
+                on the keyboard.
+            </div>
+
+            <div class="all-table">
+                <div id="game-container"></div>
+                <div id="score">Score: 0</div>
+                <audio id="background-music" src="./asset/bolero.mp3" preload="auto"></audio>
+                <button id="start-button">Start Game</button>
+                <script src="game.js"></script>
+            </div>
+        </div>
+    </main>
+
+<script src="test.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: #d7d7d7;
+    overflow: hidden;
+}
+
+.note {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 200px;
+    background: linear-gradient(#d7d7d7, #3a7b9e);
+    
+}
+
+#start-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    font-family: Instrument Serif;
+
+    position: absolute;
+    right: 30PX;
+}
