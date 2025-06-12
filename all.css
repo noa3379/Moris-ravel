@@ -1,0 +1,20 @@
+.all-table{
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    margin: 0 auto;
+    border: 0;
+}
+
+table {
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    position: absolute;
+    right: 7px;
+    border: 0;
+}
+
+th, td{
+    border: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+}
