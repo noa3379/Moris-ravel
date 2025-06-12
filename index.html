@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE BELVEDERE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Instrument Serif', serif;
+            background-color: #ffffff;
+            color: #000000;
+            overflow: hidden; /* 스크롤바 제거 */
+        }
+
+        h1 {
+            margin-top: 42px;
+            margin-left: 67px; 
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 0; /* 화면 상단에서 고정 */
+            z-index: 10; /* 다른 요소 위에 표시되도록 설정 */
+            background-color: #ffffff; /* 배경 색상 추가 */
+            width: 100%; /* 화면 전체 폭 */
+
+        }
+
+        .main-line {
+            width: 90%; /* 화면 너비의 90% */
+            border: 0; /* 기본 테두리 제거 */
+            height: 2px;
+            background-color: black;
+            margin: 20px auto; /* 위아래 여백, 가운데 정렬 */
+        }
+
+        .home {
+            display: flex;
+            height: 100vh; /* 화면 높이를 가득 채움 */
+            overflow: hidden; /* 스크롤바 숨김 */
+        }
+
+        .door-holder {
+            position: fixed; /* 화면에서 고정 */
+            left: 100px; /* 화면 왼쪽에서 100px 떨어짐 */
+            top: 50%; /* 세로 중앙 정렬 */
+            transform: translateY(-50%);
+            z-index: 5; /* 다른 요소 위에 표시 */
+        }
+
+        .long-text {
+            margin-left: 800px; /* door-holder 오른쪽에 위치 */
+            width: 750px; /* 텍스트 영역 크기 */
+            font-size: 50px;
+            position: absolute;
+            font-family: Instrument Serif;
+            top : 0px;
+            height: 100vh; /* 화면 높이와 동일 */
+            overflow-y: auto; /* 세로 스크롤 활성화 */
+            padding-right: 20px; /* 스크롤바와 간격 */
+            box-sizing: border-box;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="top-nav">
+        <h1>LE BELVEDERE</h1>
+        <hr class="main-line">
+    </div>
+
+    <!-- Content -->
+    <main class="home">
+        <div class="door-holder">
+            <a href="main.html">
+                <img src="./asset/문 1.svg" style="width: 400px;">
+            </a>
+        </div>
+
+        <div class="long-text">
+            Joseph Maurice Ravel (7 March 1875 - 28 December 1937) was a French composer, pianist and conductor. He is often associated with Impressionism along with his elder contemporary Claude Debussy, although both composers rejected the term. In the 1920s and 1930s Ravel was internationally regarded as France's greatest living composer.
+
+Born to a music-loving family, Ravel attended France's premier music college, the Paris Conservatoire; he was not well regarded by its conservative establishment, whose biased treatment of him caused a scandal. After leaving the conservatoire, Ravel found his own way as a composer, developing a style of great clarity and incorporating elements of modernism, baroque, neoclassicism and, in his later works, jazz. He liked to experiment with musical form, as in his best-known work, Boléro (1928), in which repetition takes the place of development. Renowned for his abilities in orchestration, Ravel made some orchestral arrangements of other composers' piano music, of which his 1922 version of Mussorgsky's Pictures at an Exhibition is the best known.
+
+A slow and painstaking worker, Ravel composed fewer pieces than many of his contemporaries. Among his works to enter the repertoire are pieces for piano, chamber music, two piano concertos, ballet music, two operas and eight song cycles; he wrote no symphonies or church music. Many of his works exist in two versions: first, a piano score and later an orchestration. Some of his piano music, such as Gaspard de la nuit (1908), is exceptionally difficult to play, and his complex orchestral works such as Daphnis et Chloé (1912) require skilful balance in performance.
+
+Ravel was among the first composers to recognise the potential of recording to bring their music to a wider public. From the 1920s, despite limited technique as a pianist or conductor, he took part in recordings of several of his works; others were made under his supervision.
+        </div>
+    </main>
+</body>
+</html>
