@@ -1,0 +1,75 @@
+.concerts-title{
+    font-size: 30px;
+}
+
+.concerts-info{
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.player-title{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.player-name{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.player-wrapper{
+    display: flex; /* 네비게이션과 타이틀을 수평으로 배치 */
+    gap: 30px; /* 두 요소 간 간격 */
+    margin-left: 0px; /* 전체 왼쪽 마진 */
+    margin-top: 30px;
+    position: relative;
+    z-index: 30;
+}
+
+.poster{
+    width: 100%;
+}
+
+.ticket{
+    width: 224px; height: 54px;
+    background-color: #d9d9d9;
+    font-family: Instrument Serif;
+    align-content: center; text-align: center;
+}
+
+.ticket:hover {
+    background-color: #000000;
+    }
+
+
+.right-wrapper{
+    width: 200px;height: 335px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 30;
+}
+
+.concerts-wrapper{
+    width: 680px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 30;
+
+}
+
+.concerts-line{
+    width: 650px; /* 명시적 너비 */
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 60px auto;
+    position: relative;
+    z-index: 30;
+}
